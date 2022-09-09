@@ -21,7 +21,7 @@ const App = () => {
       setGiIdList(res.data.map((gif) => gif.id));
     });
   };
-  const changeSelectedGif = (newSelectedGifId) => {
+  const changeSelectGif = (newSelectedGifId) => {
     setGifIdSelected(newSelectedGifId);
   };
 
@@ -34,7 +34,7 @@ const App = () => {
         </div>
       </div>
       <div className="right-scene">
-        <GifList gifIdList={giIdList} changeSelectedGif={changeSelectedGif} />
+        <GifList gifIdList={giIdList} changeSelectGif={changeSelectGif} />
       </div>
     </div>
   );
